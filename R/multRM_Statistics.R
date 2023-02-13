@@ -133,9 +133,9 @@ multRM.Statistic <- function(Y, nind, hypo_matrix, iter, alpha, resampling,
     BSmeans <- lapply(bs_out, function(x) x$meansP)
     BSVar <- lapply(bs_out, function(x) x$DP)
   }
-  ecdf_WTPS <- ecdf(WTPS, digits = 32)
+  ecdf_WTPS <- ecdf(WTPS)
   p_valueWTPS <- 1-ecdf_WTPS(WTS)
-  ecdf_MATS <- ecdf(MATSbs, digits = 32)
+  ecdf_MATS <- ecdf(MATSbs)
   p_valueMATS <- 1 - ecdf_MATS(Q_N)
   
   
