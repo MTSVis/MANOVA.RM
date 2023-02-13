@@ -6,6 +6,8 @@
 
 multRM.Statistic <- function(Y, nind, hypo_matrix, iter, alpha, resampling,
                              para, CPU, seed, p, t){
+
+  print("Martin's code additions incl.")
   
   N <- sum(nind)
   H <- hypo_matrix
